@@ -1,0 +1,1 @@
+This repository is intended to collect C++ header files containing widely applicable functions or uses. 
