@@ -33,17 +33,6 @@ void playerInfo(player name)
 }
 
 
-// explicit specialization for trading properties
-void Swap(player &p1, player &p2)
-{
-    property *temp = p1.collection;         // we allocate a temp ptr to a property
-    p1.collection = p2.collection;
-    p2.collection = temp;
-
-    return;
-}
-
-
 // generic template function to swap two items, could be integers or structs
 template <typename T>
 void Swap(T &a, T &b)
@@ -59,6 +48,18 @@ void Swap(T &a, T &b)
     //cout << "\tname: "<< b.name << "\n\tprice: " << b.price <<"\n\tRent: "<< b.costPerNight <<endl;
     //cout <<"\n\n"<<endl;
 }
+
+
+// explicit specialization for trading properties
+template <> void Swap<player>(player &p1, player &p2)
+{
+    property *temp = p1.collection;         // we allocate a temp ptr to a property
+    p1.collection = p2.collection;
+    p2.collection = temp;
+
+    return;
+}
+
 
 
 int main()
