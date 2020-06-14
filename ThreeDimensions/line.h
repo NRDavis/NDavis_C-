@@ -16,6 +16,10 @@ public:
     line(line C, point D);
     ~line();
 
+    double getX();
+    double getY();
+    double getZ();
+
     bool parallel();
     bool orthogonal();
 };

@@ -1,6 +1,5 @@
-
-
-
+#ifndef PLANE.H
+#define "plane.h"
 
 
 
@@ -46,3 +45,5 @@ double[] plane::normal()
 {
     return n;
 }
+
+#endif
