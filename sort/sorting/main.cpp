@@ -1,4 +1,5 @@
 #include <iostream>
+
 #include "insertionsort.hpp"
 #include "bubblesort.hpp"
 
@@ -7,8 +8,8 @@
 
 using namespace std;
 
-template <typename T>
-void printArray(T A[], int mag);
+//template <typename T>
+//void printArray(T A[], int mag);
 
 template <typename T>
 void dumbSort(T A[], int mag);
@@ -42,40 +43,32 @@ int main()
     cout<<"\n\n"<<endl;
     double d[10] = {12.2, 2.1, 0.3, 4.5, 6.7, 9.2, 8.88, 9.201, 3.223, 122};    // Testing insertion sort
     printArray(d,10);
-    insertionBasic(d,10);
+    insertionSort(d,10);
     printArray(d,10);
     */
 
-
+    /*
     cout<<"Testing bubblesort"<<endl;
     printArray(c,8);
     bubbleSort(c,8);
     printArray(c,8);
+    */
+
+    /*
+    insertionSort(b,8);
+    printArray(b,8);
+    */
+
+
+
+
+
 
 
 
     return 0;
 }
 
-
-
-
-
-
-
-/*
-template <typename T>
-void printArray(T A[], int mag)
-{
-    int i;
-    cout<<"Printing ARRAY\n\t";
-    for(i=0; i < mag; i++)
-    {
-        cout<<A[i]<<" ";
-    }
-    cout<<endl;
-}
-*/
 
 template <typename T>
 void dumbSort(T A[], int mag)
