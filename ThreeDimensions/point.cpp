@@ -1,6 +1,4 @@
-#ifndef POINT.H
 #include "point.h"
-#ifndef MATH.H
 #include <math.h>
 
 
@@ -17,7 +15,6 @@ point::point(double xx, double yy, double zz)
     x = xx;
     y = yy;
     z = zz;
-
 }
 
 point::point(point &A)
@@ -64,5 +61,5 @@ double point::dist2Pt(point A)
     return sqrt( dx*dx + dy*dy + dz*dz);
 }
 
-#endif
-#endif
+//#endif
+//#endif

@@ -1,3 +1,6 @@
+#ifndef POINT
+#define POINT
+
 /*
 This header file defines our point object and several functions we'll use to manipulate data
 
@@ -26,5 +29,4 @@ public:
 
 
 
-
-
+#endif

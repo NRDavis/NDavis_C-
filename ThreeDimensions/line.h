@@ -1,5 +1,6 @@
-#ifndef POINT.H
-#define "point.h"
+#ifndef LINE
+#define LINE
+#include "point.h"
 
 /*
 Files line.cpp and line.h define how point and plane objects interact
@@ -12,16 +13,22 @@ private:
     point i;
 public:
     line();
-    line(point A, point B);
-    line(line C, point D);
+    line(point &A, point &B);
+    line(line &C, point &D);
     ~line();
 
-    double getX();
-    double getY();
-    double getZ();
+    double dirX();
+    double dirY();
+    double dirZ();
+
+    point offset();
+    double offsetX();
+    double offsetY();
+    double offsetZ();
 
     bool parallel();
     bool orthogonal();
 };
 
-#endif // POINT
+
+#endif // LINE
