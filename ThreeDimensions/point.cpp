@@ -4,10 +4,6 @@
 #include <math.h>
 
 
-
-
-
-
 // Constructors and Destructors
 point::point()
 {
@@ -23,14 +19,14 @@ point::point(double xx, double yy, double zz)
     z = zz;
 
 }
-/*
+
 point::point(point &A)
 {
-    x = &A.getX();
-    y = &A.getY();
-    z = &A.getZ();
+    x = A.getX();
+    y = A.getY();
+    z = A.getZ();
 }
-*/
+
 point::~point()
 {
 

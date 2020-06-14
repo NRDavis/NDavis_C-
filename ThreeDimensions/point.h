@@ -13,7 +13,7 @@ public:
 
     point();                                                // Default constructor
     point(double xx = 0, double yy = 0, double zz = 0);     // destructor
-    //point(point &A);                                         // Copy Constructor
+    point(point &A);                                         // Copy Constructor
     ~point();                                               // Default destructor
 
     double getX();
