@@ -1,4 +1,4 @@
-#include "point.h"
+#include "point.hpp"
 #include <math.h>
 
 
@@ -61,5 +61,3 @@ double point::dist2Pt(point A)
     return sqrt( dx*dx + dy*dy + dz*dz);
 }
 
-//#endif
-//#endif

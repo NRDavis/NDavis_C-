@@ -1,53 +1,32 @@
-#include "line.h"
-#include <math.h>
-#ifndef POINT
-#include POINT
+#include "line.hpp"
 
-
-
-
-// Constructors and destructors
-line::line()
+/*
+line::line(point a, point b)
 {
-    //l = {1/sqrt(3),1/sqrt(3),1/sqrt(3)};    // points in
-    l[0] = 1/sqrt(3);
-    l[1] = 1/sqrt(3);
-    l[2] = 1/sqrt(3);
+    *i1 = point(a);
+    *i2 = point(b);
+}
+*/
 
-    i = point(0,0,0);    // origin
+
+line::line(point &a, point &b)
+{
+    l[0] = b.getX() - a.getX();
+    l[1] = b.getY() - a.getY();
+    l[2] = b.getZ() - a.getZ();
 }
 
-line::line(point &A, point &B)
+line::line(line &c)
 {
-    // defining point i
-    i = point(&A);
-
-    // defining trajectory
-    l[0] = A.getX() - B.getX();
-    l[1] = A.getY() - B.getY();
-    l[2] = A.getZ() - B.getZ();
+    l[0] = c.dirX();
+    l[1] = c.dirY();
+    l[2] = c.dirZ();
 }
-
-line::line(line &C, point &D)
-{
-    l[0] = C.dirX();
-    l[1] = C.dirY();
-    l[2] = C.dirZ();
-
-    i = point(&D);
-}
-
-line::~line()
-{
-
-}
-
-// Functions
 
 
 double line::dirX()
 {
-    return 1[0];
+    return l[0];
 }
 
 double line::dirY()
@@ -60,36 +39,11 @@ double line::dirZ()
     return l[2];
 }
 
-point line::offset()
+bool line::parallel(line &a)
 {
-    return i;
-}
-
- double line::offsetX()
-{
-    return i.getX();
-}
-
-double line::offsetY()
-{
-    return i.getY();
-}
-
-double line::offsetZ()
-{
-    return i.getZ();
-}
-
-bool line::parallel()
-{
-    //temp
+    if(a.dirX() == l[0] && a.dirY() == l[1] && a.dirZ() == l[2])
+    {
+        return true;
+    }
     return false;
 }
-
-bool line::orthogonal()
-{
-    //temp
-    return false;
-}
-
-#endif
