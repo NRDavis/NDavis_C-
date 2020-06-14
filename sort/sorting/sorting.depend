@@ -4,7 +4,7 @@
 
 1592115081 c:\users\natha\nrdavis_cplusplus\sort\sorting\bubblesort.hpp
 
-1592117560 source:c:\users\natha\nrdavis_cplusplus\sort\sorting\insertionsort.cpp
+1592155571 source:c:\users\natha\nrdavis_cplusplus\sort\sorting\insertionsort.cpp
 	"insertionsort.hpp"
 
 1592117105 c:\users\natha\nrdavis_cplusplus\sort\sorting\insertionsort.hpp
@@ -19,7 +19,7 @@
 
 1592115126 c:\users\natha\nrdavis_cplusplus\sort\sorting\quicksort.hpp
 
-1592116381 source:c:\users\natha\nrdavis_cplusplus\sort\sorting\main.cpp
+1592155450 source:c:\users\natha\nrdavis_cplusplus\sort\sorting\main.cpp
 	<iostream>
 	"insertionsort.hpp"
 

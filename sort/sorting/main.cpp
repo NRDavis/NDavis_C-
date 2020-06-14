@@ -21,13 +21,21 @@ int main()
     //cout<<a[0]<<endl;
 
     printArray(a, 10);  // testing out printArray()
-
+    cout<<"\n\n"<<endl;
+    printArray(b,8);
     dumbSort(b,8);      // testing dumbSort<int>()
     printArray(b,8);
-
+    cout<<"\n\n"<<endl;
+    printArray(c,8);
     dumbSort(c,8);      // testing dumbSort<double>()
     printArray(c,8);
-    //insertionBasic(a, 2);
+
+    cout<<"\n\n"<<endl;
+    double d[10] = {12.2, 2.1, 0.3, 4.5, 6.7, 9.2, 8.88, 9.201, 3.223, 122};
+    printArray(d,10);
+    insertionBasic(d,10);
+    printArray(d,10);
+
     return 0;
 }
 
