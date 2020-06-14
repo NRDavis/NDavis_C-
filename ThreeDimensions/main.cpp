@@ -19,9 +19,19 @@ int main()
     line d(c);
     cout <<"Line d:"<<d.dirX()<<" "<<d.dirY()<<" "<<d.dirZ()<< endl;
 
+    if(d.parallel(c)){
+        cout<<"Lines D and C are parallel -- correct."<<endl;
+    }else{
+        cout<<"Lines D and C are not determined to be parallel -- fix this."<<endl;
+    }
 
-
-
+    point k(-1,-1,1);
+    line e(a,k);
+    if(d.parallel(e)){
+        cout<<"Lines D and e are determined to be parallel -- fix this."<<endl;
+    }else{
+        cout<<"Lines D and e are not parallel -- correct."<<endl;
+    }
 
     return 0;
 }
