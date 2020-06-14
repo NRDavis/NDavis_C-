@@ -19,7 +19,8 @@
 
 1592115126 c:\users\natha\nrdavis_cplusplus\sort\sorting\quicksort.hpp
 
-1592155450 source:c:\users\natha\nrdavis_cplusplus\sort\sorting\main.cpp
+1592156712 source:c:\users\natha\nrdavis_cplusplus\sort\sorting\main.cpp
 	<iostream>
 	"insertionsort.hpp"
+	"bubblesort.hpp"
 

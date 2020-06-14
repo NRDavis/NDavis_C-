@@ -20,9 +20,4 @@ void bubbleSort(T A[], int mag)
     return;
 }
 
-
-
-
-
-
 #endif // BUBBLESORT

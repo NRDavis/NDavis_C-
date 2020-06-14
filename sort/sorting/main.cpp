@@ -2,7 +2,7 @@
 #include "insertionsort.hpp"
 #include "bubblesort.hpp"
 
-
+#include "printArray.hpp"
 
 
 using namespace std;
@@ -63,7 +63,7 @@ int main()
 
 
 
-
+/*
 template <typename T>
 void printArray(T A[], int mag)
 {
@@ -75,6 +75,7 @@ void printArray(T A[], int mag)
     }
     cout<<endl;
 }
+*/
 
 template <typename T>
 void dumbSort(T A[], int mag)
