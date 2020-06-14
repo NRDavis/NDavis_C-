@@ -1,5 +1,10 @@
 #include <iostream>
 #include "insertionsort.hpp"
+#include "bubblesort.hpp"
+
+
+
+
 using namespace std;
 
 template <typename T>
@@ -20,6 +25,7 @@ int main()
     double c[8] = {10.0, 12.2, 6.2, 3.4, 45.8,78,98.9,100.0};
     //cout<<a[0]<<endl;
 
+    /*
     printArray(a, 10);  // testing out printArray()
     cout<<"\n\n"<<endl;
     printArray(b,8);
@@ -28,13 +34,25 @@ int main()
     cout<<"\n\n"<<endl;
     printArray(c,8);
     dumbSort(c,8);      // testing dumbSort<double>()
-    printArray(c,8);
+    printArray(c,8);    // basically testing our implementation of generic template functions
+    */
 
+
+    /*
     cout<<"\n\n"<<endl;
-    double d[10] = {12.2, 2.1, 0.3, 4.5, 6.7, 9.2, 8.88, 9.201, 3.223, 122};
+    double d[10] = {12.2, 2.1, 0.3, 4.5, 6.7, 9.2, 8.88, 9.201, 3.223, 122};    // Testing insertion sort
     printArray(d,10);
     insertionBasic(d,10);
     printArray(d,10);
+    */
+
+
+    cout<<"Testing bubblesort"<<endl;
+    printArray(c,8);
+    bubbleSort(c,8);
+    printArray(c,8);
+
+
 
     return 0;
 }

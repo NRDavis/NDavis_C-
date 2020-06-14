@@ -32,11 +32,6 @@ void insertionBasic(T a[], int mag)
 
 
 
-
-
-
-
-
 /*
 template <typename T>
 void insertionRecur(T a[], int mag);        // recursive form of insertion sort
