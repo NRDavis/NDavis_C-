@@ -1,7 +1,7 @@
 #include <iostream>
 #include "point.hpp"
 #include "line.hpp"
-
+#include "plane.hpp"
 
 
 
@@ -32,6 +32,14 @@ int main()
     }else{
         cout<<"Lines D and e are not parallel -- correct."<<endl;
     }
+
+    cout<<"\n\n"<<endl;
+    point p1(0,0,0);
+    point p2(1,1,1);
+    point p3(-2,2,2);
+
+    plane pl(p1,p2,p3);
+    pl.printNormal();
 
     return 0;
 }

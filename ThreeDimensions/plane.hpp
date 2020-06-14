@@ -3,6 +3,8 @@
 
 #include "point.hpp"
 #include "line.hpp"
+#include <iostream>
+
 
 class plane
 {
@@ -16,7 +18,7 @@ public:
     double compY();
     double compZ();
 
-
+    void printNormal();
 };
 
 
