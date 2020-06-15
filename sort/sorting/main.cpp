@@ -3,6 +3,7 @@
 #include "insertionsort.hpp"
 #include "bubblesort.hpp"
 #include "mergesort.hpp"
+#include "quicksort.hpp"
 
 #include "printArray.hpp"
 
@@ -60,6 +61,7 @@ int main()
     printArray(b,8);
     */
 
+    /*
     printArray(b,8);
     mergeSort(b, 0, 8);
     printArray(b,8);
@@ -68,6 +70,12 @@ int main()
     printArray(c,8);
     mergeSort(c,0,7);   // must be sure to reduce the length of the item by one
     printArray(c,8);
+    */
+    cout<<"\n\nTesting quickSort()"<<endl;
+    printArray(c,8);
+    quickSort(c,0,7);   // must be sure to reduce the length of the item by one
+    printArray(c,8);
+
 
     return 0;
 }
