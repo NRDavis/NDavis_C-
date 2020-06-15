@@ -2,25 +2,30 @@
 1592115075 source:c:\users\natha\nrdavis_cplusplus\sort\sorting\bubblesort.cpp
 	"bubblesort.hpp"
 
-1592156568 c:\users\natha\nrdavis_cplusplus\sort\sorting\bubblesort.hpp
+1592156847 c:\users\natha\nrdavis_cplusplus\sort\sorting\bubblesort.hpp
 
 1592156143 source:c:\users\natha\nrdavis_cplusplus\sort\sorting\insertionsort.cpp
 	"insertionsort.hpp"
 
-1592156265 c:\users\natha\nrdavis_cplusplus\sort\sorting\insertionsort.hpp
+1592157332 c:\users\natha\nrdavis_cplusplus\sort\sorting\insertionsort.hpp
 
 1592115212 source:c:\users\natha\nrdavis_cplusplus\sort\sorting\mergesort.cpp
 	"mergesort.hpp"
 
-1592115204 c:\users\natha\nrdavis_cplusplus\sort\sorting\mergesort.hpp
+1592182345 c:\users\natha\nrdavis_cplusplus\sort\sorting\mergesort.hpp
 
 1592115138 source:c:\users\natha\nrdavis_cplusplus\sort\sorting\quicksort.cpp
 	"quicksort.hpp"
 
 1592115126 c:\users\natha\nrdavis_cplusplus\sort\sorting\quicksort.hpp
 
-1592156712 source:c:\users\natha\nrdavis_cplusplus\sort\sorting\main.cpp
+1592171373 source:c:\users\natha\nrdavis_cplusplus\sort\sorting\main.cpp
 	<iostream>
 	"insertionsort.hpp"
 	"bubblesort.hpp"
+	"mergesort.hpp"
+	"printArray.hpp"
+
+1592156966 c:\users\natha\nrdavis_cplusplus\sort\sorting\printarray.hpp
+	<iostream>
 
