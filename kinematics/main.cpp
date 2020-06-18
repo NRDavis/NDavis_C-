@@ -9,7 +9,7 @@ File:           Main.cpp    --- OOP robotics kinematics item
 using namespace std;
 
 #include "joint.hpp"
-
+#include "link.hpp"
 
 
 int main()
@@ -29,6 +29,9 @@ int main()
     joint b(b_ang, b_ran, s);
     b.display();
 
+    link c(13, a, b);
+    cout<<"Link Info:\nlength: "<<c.getLength()<<endl;
+    cout<<"Base joint: "<<a.getDes()<<"\tEnd joint: "<<b.getDes()<<endl;
 
 
     return 0;

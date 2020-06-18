@@ -19,8 +19,8 @@ private:
 public:
 
     joint();            // default constructor
-    joint(float ang, float *ran, const string &s);   // constructor
-    joint(joint &j);    // copy constructor
+    joint(float ang, float *ran, const string s);   // constructor
+    joint(const joint &j);    // copy constructor
     ~joint();           // default destructor
 
     float getAngle();
@@ -31,7 +31,7 @@ public:
     void setAngle(float a);            // set the current angle of the joint
     void setMin(float m);              // reset the minimum angle for the joint
     void setMax(float m);              // reset the maximum angle for the joint
-    void setDes(const string &s);
+    void setDes(const string s);
 
     void display();
 };
@@ -45,7 +45,7 @@ joint::joint()
     description = string("None");
 }
 
-joint::joint(float ang, float *ran, const string &s)
+joint::joint(float ang, float *ran, const string s)
 {
     angle = ang;
     range[0] = ran[0];
@@ -53,12 +53,12 @@ joint::joint(float ang, float *ran, const string &s)
     description = string(s);    
 }
 
-joint::joint(joint &j)
+joint::joint(const joint &j)
 {
-    angle = j.getAngle();
-    range[0] = j.getMin();
-    range[1] = j.getMax();
-    description = string(j.getDes());
+    angle = j.angle;
+    range[0] = j.range[0];
+    range[1] = j.range[1];
+    description = j.description;
 }
 
 
